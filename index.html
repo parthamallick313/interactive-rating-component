@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        font-weight: bold;
+        color: #fb7413;
+      }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-w-[375px] min-h-screen text-[15px] text-white bg-[#121417]"
+  >
+    <header></header>
+
+    <main class="max-w-[375px] px-4 md:px-0">
+      <!-- Rating State -->
+      <div
+        class="flex flex-col gap-4 px-6 py-7 bg-[#252d37] rounded-xl bg-img rate"
+      >
+        <div
+          class="flex items-center justify-center w-10 h-10 bg-[#252d37] rounded-full"
+        >
+          <img src="/images/icon-star.svg" alt="" />
+        </div>
+
+        <h1 class="text-[25px]">How did we do?</h1>
+
+        <p class="text-[#959eac]">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="flex items-center justify-between mt-4 btn-container">
+          <button
+            class="flex items-center justify-center w-12 h-12 leading-[0px] text-grey bg-darkblue rounded-full transition-all duration-300 hover:text-white hover:bg-[#fb7413] active:text-white active:bg-[#7c8798] btn-star"
+          >
+            1
+          </button>
+          <button
+            class="flex items-center justify-center w-12 h-12 leading-[0px] text-grey bg-darkblue rounded-full transition-all duration-300 hover:text-white hover:bg-[#fb7413] active:text-white active:bg-[#7c8798] btn-star"
+          >
+            2
+          </button>
+          <button
+            class="flex items-center justify-center w-12 h-12 leading-[0px] text-grey bg-darkblue rounded-full transition-all duration-300 hover:text-white hover:bg-[#fb7413] active:text-white active:bg-[#7c8798] btn-star"
+          >
+            3
+          </button>
+          <button
+            class="flex items-center justify-center w-12 h-12 leading-[0px] text-grey bg-darkblue rounded-full transition-all duration-300 hover:text-white hover:bg-[#fb7413] active:text-white active:bg-[#7c8798] btn-star"
+          >
+            4
+          </button>
+          <button
+            class="flex items-center justify-center w-12 h-12 leading-[0px] text-grey bg-darkblue rounded-full transition-all duration-300 hover:text-white hover:bg-[#fb7413] active:text-white active:bg-[#7c8798] btn-star"
+          >
+            5
+          </button>
+        </div>
+
+        <button
+          class="mt-3 py-3 font-bold tracking-widest uppercase bg-[#fb7413] rounded-full transition-all duration-300 hover:text-[#fb7413] hover:bg-white submit"
+        >
+          Submit
+        </button>
+      </div>
+
+      <!-- Thank You State -->
+      <div
+        class="hidden flex-col items-center gap-4 px-6 py-8 bg-[#252d37] rounded-xl bg-img md:px-7 thank"
+      >
+        <div>
+          <img src="/images/illustration-thank-you.svg" alt="" />
+        </div>
+
+        <p
+          class="mt-4 py-2 px-4 text-[#fb7413] bg-[#252d37] rounded-full rating"
+        >
+          <!-- You selected 4 out of 5 -->
+        </p>
+
+        <h1 class="text-[25px]">Thank you!</h1>
+
+        <p class="text-[#959eac] text-center md:text-sm">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/parthamallick313"
+          target="_blank"
+          >Partha Mallick</a
+        >.
+      </div>
+    </footer>
+    <script src="/dist/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-grey {
+  background-color: #7c8798;
+}
+
+.bg-darkblue {
+  background-color: #252d37;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-grey {
+  color: #959eac;
+}
+
+.bg-img {
+  background-image: linear-gradient(
+    to bottom,
+    #252d37,
+    10%,
+    rgba(18, 20, 23, 0.5)
+  );
+}
